@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Ask Ms. Kay AI backend with OpenAI File Search and Simli compatibility",
+  "description": "Ask Ms. Kay AI backend",
   "engines": {
     "node": "20.x"
   },
   "dependencies": {
-    "openai": "^5.0.0"
+    "openai": "^7.1.0"
   }
 }
