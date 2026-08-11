@@ -25,7 +25,22 @@ export default async function handler(req, res) {
       },
     });
   }
+const expectedKey = process.env.SIMLI_LLM_API_KEY;
 
+if (expectedKey) {
+  const authorization = req.headers.authorization || "";
+  const suppliedKey = authorization.startsWith("Bearer ")
+    ? authorization.substring(7)
+    : "";
+
+  if (suppliedKey !== expectedKey) {
+    return res.status(401).json({
+      error: {
+        message: "Unauthorized",
+      },
+    });
+  }
+}
   try {
     if (!process.env.OPENAI_API_KEY) {
       throw new Error("OPENAI_API_KEY is not configured.");
