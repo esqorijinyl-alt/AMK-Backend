@@ -1,1 +1,13 @@
-
+{
+  "name": "askmskay-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Ask Ms. Kay AI backend with OpenAI File Search and Simli compatibility",
+  "engines": {
+    "node": "20.x"
+  },
+  "dependencies": {
+    "openai": "^5.0.0"
+  }
+}
