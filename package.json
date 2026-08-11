@@ -1,0 +1,12 @@
+{
+  "name": "askmskay-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Ask Ms. Kay AI backend",
+  "engines": {
+    "node": "20.x"
+  },
+  "dependencies": {
+    "openai": "^7.1.0"
+  }
+}
