@@ -1,7 +1,6 @@
 {
   "name": "askmskay-backend",
   "version": "1.0.0",
-  "private": true,
   "type": "module",
   "description": "Ask Ms. Kay AI backend",
   "engines": {
